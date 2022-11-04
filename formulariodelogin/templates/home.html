@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container mt-3">
+        <h1 style="color: orange">Formulário de Login</h1>
+        <h2>Banco de Dados de DEV's imersos na Tecnologia !!!</h2>
+        <hr>
+        {% for u in usuarios %}
+        <div class="row border mt-4 p-3 usuario">
+            <div class="col col-3">
+                <strong>{{ u.username }}</strong>
+                <strong>{{ u.email }}</strong>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
